@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript">
+        function toggleText() {
+            var text = document.getElementById("demo");
+            if (text.style.display == "none") {
+                text.style.display = "block";}
+            else {
+                text.style.display = "none";}
+        }
+    </script>
+</head>
+<body>
+    <h1>HTML 태그 종류</h1>
+    <h1>태그의 4가지 분류</h1>
+    <ul>
+        <li>     
+            <button type='button' onclick="toggleText()">블럭(block) 태그</button>
+            <ul>
+                <div id="demo" style='display: none'>
+                    <li>Block 태그는 새로운 라인에서 시작 되며, Block 태그 다음에 오는 모든 태그들은 새 라인에서 시작 >> 행렬로 비교하면 행에 해당</li>
+                    <li>Block 태그들은 css의 속성 중 height, width, margin, padding을 적용할 수 있다.</li>
+                    <li>예 : &lt;p&gt; , &lt;div&gt;</li>
+                </div>
+            </ul>
+        </li>
+        <li>
+            <button>인라인(Inline) 태그</button>
+            <ul>
+                    <li>Inline 태그들은 새라인에서 시작하지 않고 현재 라인에서 시작 >> 행렬로 비교하면 열에 해당</li>
+                    <li>Inline 태그들은 css의 속성 중 height, width, margin, padding등의 속성을 적용할 수 없다.</li>
+                    <li>예 : &lt;span&gt;</li>
+            </ul>
+        </li>
+        <li>
+            <button>쌍으로 된 태그</button>
+            <ul>
+                    <li>태그의 시작과 끝이 따로 있어 시작과 끝 사이에 안에 코드를 넣는 태그 : &lt;태그&gt; 코드 &lt;/태그&gt;</li>
+                    <li>예 : &lt;p&gt; , &lt;div&gt;</li>
+            </ul>
+        </li>
+        <li>
+            <button>쌍이 아닌 태그</button>
+            <ul>
+                    <li>태그의 시작과 끝이 따로 없는 태그 : &lt;태그/&gt; 코드 &lt;태그&gt;</li>
+                </div>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
